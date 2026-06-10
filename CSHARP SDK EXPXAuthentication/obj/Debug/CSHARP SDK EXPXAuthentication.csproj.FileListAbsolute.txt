@@ -1,0 +1,31 @@
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\CSHARP SDK EXPXAuthentication.exe.config
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\CSHARP SDK EXPXAuthentication.exe
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\CSHARP SDK EXPXAuthentication.pdb
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\Newtonsoft.Json.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Buffers.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.IO.Pipelines.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Memory.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Numerics.Vectors.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Text.Encodings.Web.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Text.Json.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\Newtonsoft.Json.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Buffers.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.IO.Pipelines.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Memory.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Numerics.Vectors.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Text.Encodings.Web.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Text.Json.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\obj\Debug\CSHARP SDK EXPXAuthentication.csproj.AssemblyReference.cache
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\obj\Debug\CSHARP_SDK_EXPXAuthentication.Form1.resources
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\obj\Debug\CSHARP_SDK_EXPXAuthentication.Properties.Resources.resources
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\obj\Debug\CSHARP SDK EXPXAuthentication.csproj.GenerateResource.cache
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\obj\Debug\CSHARP SDK EXPXAuthentication.csproj.CoreCompileInputs.cache
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\obj\Debug\CSHARP S.D1C1DBC1.Up2Date
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\obj\Debug\CSHARP SDK EXPXAuthentication.exe
+C:\ProgramData\Visual Studio\4\TenzoXAuthenticationCSharp-main\CSHARP SDK EXPXAuthentication\obj\Debug\CSHARP SDK EXPXAuthentication.pdb
