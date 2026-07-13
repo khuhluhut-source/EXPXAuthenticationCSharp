@@ -203,10 +203,25 @@ namespace EXPXAuth
             }
         }
 
-        public async Task<LoginResult> LoginLicense(string license)
+        public class LoginLicenseResult
+        {
+            public bool Success { get; set; }
+            public string Message { get; set; } = string.Empty;
+            public UserData User { get; set; }
+        }
+
+        public async Task<LoginLicenseResult> LoginLicense(string licenseKey)
         {
             ResponseMessage = "";
-            var loginResult = new LoginResult();
+            var licenseResult = new LoginLicenseResult();
+
+            if (string.IsNullOrWhiteSpace(licenseKey))
+            {
+                ResponseMessage = "License key cannot be empty";
+                licenseResult.Success = false;
+                licenseResult.Message = ResponseMessage;
+                return licenseResult;
+            }
 
             try
             {
@@ -214,7 +229,7 @@ namespace EXPXAuth
 
                 var response = await SendRequest("loginlicense", new Dictionary<string, string>
                 {
-                    ["licenseKey"] = license,
+                    ["licenseKey"] = licenseKey,
                     ["secret"] = Secret,
                     ["appName"] = AppName,
                     ["appVersion"] = Version,
@@ -232,25 +247,24 @@ namespace EXPXAuth
                     };
 
                     await LoadUserVariables().ConfigureAwait(false);
-
-                    ResponseMessage = "License login successful!";
-                    loginResult.Success = true;
-                    loginResult.Message = ResponseMessage;
-                    loginResult.User = User;
-                    return loginResult;
+                    ResponseMessage = $"Login successful! Welcome, {User.Username}";
+                    licenseResult.Success = true;
+                    licenseResult.Message = ResponseMessage;
+                    licenseResult.User = User;
+                    return licenseResult;
                 }
 
-                ResponseMessage = FormatErrorMessage(response.Message, "login");
-                loginResult.Success = false;
-                loginResult.Message = ResponseMessage;
-                return loginResult;
+                ResponseMessage = FormatErrorMessage(response.Message, "loginlicense");
+                licenseResult.Success = false;
+                licenseResult.Message = ResponseMessage;
+                return licenseResult;
             }
             catch (Exception ex)
             {
-                ResponseMessage = ex.Message;
-                loginResult.Success = false;
-                loginResult.Message = ResponseMessage;
-                return loginResult;
+                ResponseMessage = string.IsNullOrWhiteSpace(ex.Message) ? "License login failed" : ex.Message;
+                licenseResult.Success = false;
+                licenseResult.Message = ResponseMessage;
+                return licenseResult;
             }
         }
 
@@ -659,6 +673,25 @@ namespace EXPXAuth
                 if (upperMsg.Contains("INVALID_USERNAME"))
                 {
                     return "Invalid username format";
+                }
+            }
+            else if (operation == "loginlicense")
+            {
+                if (upperMsg.Contains("LICENSE_NOT_FOUND"))
+                {
+                    return "License key not found or invalid";
+                }
+                if (upperMsg.Contains("USER_BANNED"))
+                {
+                    return "The user associated with this license is banned";
+                }
+                if (upperMsg.Contains("HWID_MISMATCH"))
+                {
+                    return "HWID mismatch. Please reset your HWID via dashboard";
+                }
+                if (upperMsg.Contains("LICENSE_EXPIRED"))
+                {
+                    return "This license has expired";
                 }
             }
 
