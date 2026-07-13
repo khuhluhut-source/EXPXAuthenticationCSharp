@@ -203,6 +203,57 @@ namespace EXPXAuth
             }
         }
 
+        public async Task<LoginResult> LoginLicense(string license)
+        {
+            ResponseMessage = "";
+            var loginResult = new LoginResult();
+
+            try
+            {
+                await EnsureInitializedAsync().ConfigureAwait(false);
+
+                var response = await SendRequest("loginlicense", new Dictionary<string, string>
+                {
+                    ["licenseKey"] = license,
+                    ["secret"] = Secret,
+                    ["appName"] = AppName,
+                    ["appVersion"] = Version,
+                    ["hwid"] = GetHWID()
+                }).ConfigureAwait(false);
+
+                if (response.Success)
+                {
+                    IsLoggedIn = true;
+                    User = new UserData
+                    {
+                        Username = response.Username,
+                        Subscription = response.Subscription,
+                        Expiry = response.Expiry
+                    };
+
+                    await LoadUserVariables().ConfigureAwait(false);
+
+                    ResponseMessage = "License login successful!";
+                    loginResult.Success = true;
+                    loginResult.Message = ResponseMessage;
+                    loginResult.User = User;
+                    return loginResult;
+                }
+
+                ResponseMessage = FormatErrorMessage(response.Message, "login");
+                loginResult.Success = false;
+                loginResult.Message = ResponseMessage;
+                return loginResult;
+            }
+            catch (Exception ex)
+            {
+                ResponseMessage = ex.Message;
+                loginResult.Success = false;
+                loginResult.Message = ResponseMessage;
+                return loginResult;
+            }
+        }
+
         public async Task<RegisterResult> Register(string username, string password, string license)
         {
             ResponseMessage = "";
